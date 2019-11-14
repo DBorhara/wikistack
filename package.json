@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./Users/jamesshen/code/fullstack-academy/wikistack/app.js"
+    "start": "nodemon ./Users/dborhara/Desktop/FullStack Academy/wikistack/app.js"
   },
   "keywords": [],
   "author": "",

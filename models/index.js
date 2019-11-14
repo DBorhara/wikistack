@@ -38,4 +38,4 @@ const User = db.define('user', {
   }
 });
 
-module.exports = { db, Page, User }
+module.exports = { db, Page, User };

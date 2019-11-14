@@ -1,6 +1,19 @@
+const morgan = require('morgan')
+
+//Local
+const { db } = require('./models/index');
+const wikiRouter = require('./routes/wiki');
+const userRouter = require('./routes/user');
+
+//External
 const express = require('express');
 const app = express();
-const { db } = require('./models/index');
+
+
+// ...
+app.use(morgan('dev'));
+app.use('/wiki', wikiRouter);
+// or, in one line: app.use('/wiki', require('./routes/wiki'));
 
 app.get('/', (req, res) => {
   res.send('hi')
